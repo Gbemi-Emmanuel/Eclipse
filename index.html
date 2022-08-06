@@ -203,19 +203,19 @@
   <div class="container text-center text-white">
     <div class="row g-4">
       <div class="col-lg-3 col-sm-6">
-        <h1 class="display-4">1,000+</h1>
+        <h1 class="display-4" ><span id="count1"></span><span>+</span></h1>
         <h6 class="text-uppercase text-white mb-0">Happy Customers</h6>
       </div>
       <div class="col-lg-3 col-sm-6">
-        <h1 class="display-4">5,000+</h1>
+        <h1 class="display-4"><span id="count2"></span><span>+</span></h1>
         <h6 class="text-upperca text-white mb-0">Goods Avaliable</h6>
       </div>
       <div class="col-lg-3 col-sm-6">
-        <h1 class="display-4">12,000+</h1>
+        <h1 class="display-4"><span id="count3"></span><span>+</span></h1>
         <h6 class="text-upperca text-white mb-0">Goods Delivered</h6>
       </div>
       <div class="col-lg-3 col-sm-6">
-        <h1 class="display-4">15,000+</h1>
+        <h1 class="display-4"><span id="count4"></span><span>+</span></h1>
         <h6 class="text-upperca text-white mb-0">Goods Incoming</h6>
       </div>
     </div>
@@ -717,8 +717,8 @@
 </div>
 
 
+<!-----typed text---->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
 <script>
   var typed = new Typed('.tEffect', {
     strings: [
@@ -733,6 +733,32 @@
     loop: true,
     showCursor: true,
   })
+</script>
+
+<!---COUNTER EFFECT---->
+<script>
+  //#region - start of - number counter animation
+const counterAnim = (qSelector, start = 0, end, duration = 1000) => {
+ const target = document.querySelector(qSelector);
+ let startTimestamp = null;
+ const step = (timestamp) => {
+  if (!startTimestamp) startTimestamp = timestamp;
+  const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+  target.innerText = Math.floor(progress * (end - start) + start);
+  if (progress < 1) {
+   window.requestAnimationFrame(step);
+  }
+ };
+ window.requestAnimationFrame(step);
+};
+//#endregion - end of - number counter animation
+
+document.addEventListener("DOMContentLoaded", () => {
+ counterAnim("#count1", 10, 1000, 1000);
+ counterAnim("#count2", 1000, 5000, 1500);
+ counterAnim("#count3", -1000, 12000, 2000);
+ counterAnim("#count4", 500, 15000, 2500);
+});
 </script>
 
 

@@ -97,6 +97,9 @@ h1{
     background-position: center;
     background-repeat: no-repeat;
 }
+.tEffect{
+    color: var(--brand-c);
+}
 
 
 .LP-btns .getS{

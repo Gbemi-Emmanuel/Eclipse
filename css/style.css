@@ -2,7 +2,6 @@
     --dark-c: #212529;
     --white: rgb(243, 242, 242);
     --brand-c: #fffb00;
-    --brand-c-l: #f6ff00;
     --transition: all 1s ease-in-out;
 }
 
@@ -110,14 +109,14 @@ h1{
 .LP-btns .getS:hover{
     color: var(--white);
 }
-.lp-btns .LP-service{
+.LP-btns .LP-service{
     font-weight: 500;
     padding: 10px 25px;
     color: var(--white);
 }
-.lp-btns .LP-service:hover{
+.LP-btns .LP-service:hover{
     background: var(--brand-c);
-    border: 0;
+    border: none;
     outline: none;
 }
 

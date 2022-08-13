@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/696082bb22.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet'>
     
-    <script src="./script/main.js"></script>
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
     
+
 <!-- NAV-BAR -->
 
 <nav class="navbar navbar-expand-lg sticky-top">
@@ -65,9 +66,9 @@
       <div class="container ">
         <div class="row">
           <div class="col-12">
-            <h1 class="text-white fw-semibold display-4">Welcome to Agent Eclipse</h1>
-            <h4 class="text-white mt-3 mb-5 text-uppercase">We Have one of the best <span class="tEffect">Furniture</span></h4>
-            <div class="LP-btns">
+            <h1 class="text-white fw-semibold display-4" data-aos="fade-down">Welcome to Agent Eclipse</h1>
+            <h4 class="text-white mt-3 mb-5 text-uppercase" data-aos="slide-left">We Have one of the best <span class="tEffect">Furniture</span></h4>
+            <div class="LP-btns" data-aos="fade-up">
               <a href="#" class="btn getS me-3">Get Started</a>
               <a href="#" class="btn LP-service ms-3">Our Services</a>
             </div>
@@ -84,19 +85,19 @@
     <div class="row">
       <div class="col-12">
         <div class="section-title text-center">
-          <h1 class="display-4 fw-semibold">About Us</h1>
+          <h1 class="display-4 fw-semibold" data-aos="fade-in">About Us</h1>
           <div class="line"></div>
         </div>
       </div>
     </div>
     <div class="row  justify-content-center align-items-center">
-      <div class="col-lg-6">
+      <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="800">
         <img src="./img/Businessman sitting on office chair - 960x1440.png" alt="">
       </div>
       <div class="col-lg-5 col-md-6">
-        <h1>About Elicpse</h1>
-        <p  class="mb-4 mt-3">Lorem ipsum, dolor sit ame Assumenda quasi quod, sed fuga volupta</p>
-        <div class="d-flex pt-3">
+        <h1 data-aos="slide-left">About Elicpse</h1>
+        <p  class="mb-4 mt-3" data-aos="fade-up" data-aos-delay="100">Lorem ipsum, dolor sit ame Assumenda quasi quod, sed fuga volupta</p>
+        <div class="d-flex pt-3"  data-aos="fade-up" data-aos-delay="150">
           <div class="iconbox me-4">
             <i class="fa-solid fa-envelope-open-text"></i>
           </div>
@@ -105,7 +106,7 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.  vel beat</p>
           </div>
         </div>  
-        <div class="d-flex mt-3">
+        <div class="d-flex mt-3"  data-aos="fade-up" data-aos-delay="200">
           <div class="iconbox me-4">
             <i class="fa-solid fa-user-tie"></i>
           </div>
@@ -114,7 +115,7 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.  vel beat</p>
           </div>          
       </div>
-      <div class="d-flex mt-3">
+      <div class="d-flex mt-3"  data-aos="fade-up" data-aos-delay="250">
         <div class="iconbox me-4">
           <i class="fa-solid fa-bell"></i>
         </div>
@@ -134,13 +135,13 @@
     <div class="row">
       <div class="col-12">
         <div class="section-title text-center">
-          <h1 class="display-4 fw-semibold">Services</h1>
+          <h1 class="display-4 fw-semibold" data-aos="fade-in">Services</h1>
           <div class="line"></div>
         </div>
       </div>
     </div>
     <div class="row g-4">
-      <div class="col-lg-4 col-sm-6">
+      <div class="col-lg-4 col-sm-6" data-aos="fade-in-top" data-aos-delay="100">
         <div class="servicebox text-center box-shadow p-lg-5 p-4">
           <div class="iconbox">
             <i class="fa-solid fa-plane-departure"></i>
@@ -149,7 +150,7 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, ullam exer</p>
         </div>
       </div>
-      <div class="col-lg-4 col-sm-6">
+      <div class="col-lg-4 col-sm-6" data-aos="fade-in-top" data-aos-delay="150">
         <div class="servicebox text-center box-shadow p-lg-5 p-4">
           <div class="iconbox">
             <i class="fa-solid fa-wallet"></i>
@@ -158,7 +159,7 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, ullam exer</p>
         </div>
       </div>
-      <div class="col-lg-4 col-sm-6">
+      <div class="col-lg-4 col-sm-6" data-aos="fade-in-top" data-aos-delay="200">
         <div class="servicebox text-center box-shadow p-lg-5 p-4">
           <div class="iconbox">
             <i class="fa-solid fa-chart-pie"></i>
@@ -167,7 +168,7 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, ullam exer</p>
         </div>
       </div>
-      <div class="col-lg-4 col-sm-6">
+      <div class="col-lg-4 col-sm-6" data-aos="fade-in-top" data-aos-delay="250">
         <div class="servicebox text-center box-shadow p-lg-5 p-4">
           <div class="iconbox">
             <i class="fa-solid fa-taxi"></i>
@@ -176,7 +177,7 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, ullam exer</p>
         </div>
       </div>
-      <div class="col-lg-4 col-sm-6">
+      <div class="col-lg-4 col-sm-6" data-aos="fade-in-top" data-aos-delay="300">
         <div class="servicebox text-center box-shadow p-lg-5 p-4">
           <div class="iconbox">
             <i class="fa-solid fa-layer-group"></i>
@@ -185,7 +186,7 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, ullam exer</p>
         </div>
       </div>
-      <div class="col-lg-4 col-sm-6">
+      <div class="col-lg-4 col-sm-6" data-aos="fade-in-top" data-aos-delay="350">
         <div class="servicebox text-center box-shadow p-lg-5 p-4">
           <div class="iconbox">
             <i class="fa-solid fa-check-double"></i>
@@ -204,19 +205,19 @@
 <section id="counter" class="section-padding">
   <div class="container text-center text-white">
     <div class="row g-4">
-      <div class="col-lg-3 col-sm-6">
+      <div class="col-lg-3 col-sm-6" data-aos="slide-down" data-aos-delay="100">
         <h1 class="display-4" ><span id="count1"></span><span>+</span></h1>
         <h6 class="text-uppercase text-white mb-0">Happy Customers</h6>
       </div>
-      <div class="col-lg-3 col-sm-6">
+      <div class="col-lg-3 col-sm-6" data-aos="slide-down" data-aos-delay="200">
         <h1 class="display-4"><span id="count2"></span><span>+</span></h1>
         <h6 class="text-upperca text-white mb-0">Goods Avaliable</h6>
       </div>
-      <div class="col-lg-3 col-sm-6">
+      <div class="col-lg-3 col-sm-6" data-aos="slide-down" data-aos-delay="300">
         <h1 class="display-4"><span id="count3"></span><span>+</span></h1>
         <h6 class="text-upperca text-white mb-0">Goods Delivered</h6>
       </div>
-      <div class="col-lg-3 col-sm-6">
+      <div class="col-lg-3 col-sm-6" data-aos="slide-down" data-aos-delay="400">
         <h1 class="display-4"><span id="count4"></span><span>+</span></h1>
         <h6 class="text-upperca text-white mb-0">Goods Incoming</h6>
       </div>
@@ -232,13 +233,13 @@
     <div class="row">
       <div class="col-12">
         <div class="section-title text-center">
-          <h1 class="display-4 fw-semibold">Our Portfolio</h1>
+          <h1 class="display-4 fw-semibold" data-aos="fade-in">Our Portfolio</h1>
           <div class="line"></div>
         </div>
       </div>
     </div>
     <div class="row g-4">
-      <div class="col-md-4">
+      <div class="col-md-4" data-aos="fade-in" data-aos-delay="100">
         <div class="portfolio-item zoomed-image">
           <div class="image-zoom-warpper">
             <img src="./img/f3.jpg" alt="">
@@ -252,7 +253,7 @@
           <a href="./img/f3.jpg" data-fancybox="gallery" class="iconbox"><i class="fa-solid fa-magnifying-glass"></i></a>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4" data-aos="fade-in" data-aos-delay="200">
         <div class="portfolio-item zoomed-image">
           <div class="image-zoom-warpper">
             <img src="./img/f3.jpg" alt="">
@@ -266,7 +267,7 @@
           <a href="./img/f3.jpg" data-fancybox="gallery" class="iconbox"><i class="fa-solid fa-magnifying-glass"></i></a>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4" data-aos="fade-in" data-aos-delay="300">
         <div class="portfolio-item zoomed-image">
           <div class="image-zoom-warpper">
             <img src="./img/f3.jpg" alt="">
@@ -292,13 +293,13 @@
     <div class="row">
       <div class="col-12">
         <div class="section-title text-center">
-          <h1 class="display-4 fw-semibold">Testimonials</h1>
+          <h1 class="display-4 fw-semibold" data-aos="fade-in">Testimonials</h1>
           <div class="line"></div>
         </div>
       </div>
     </div>
     <div class="row gy-5 g-4">
-      <div class="col-lg-4 col-sm-6">
+      <div class="col-lg-4 col-sm-6" data-aos="fade-left" data-aos-delay="100">
         <div class="reviews">
           <div class="reviews-head p-4 bg-white box-shadow">
             <div class="text-warning">
@@ -319,7 +320,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-sm-6">
+      <div class="col-lg-4 col-sm-6" data-aos="fade-left" data-aos-delay="150">
         <div class="reviews">
           <div class="reviews-head p-4 bg-white box-shadow">
             <div class="text-warning">
@@ -340,7 +341,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-sm-6">
+      <div class="col-lg-4 col-sm-6" data-aos="fade-left" data-aos-delay="200">
         <div class="reviews">
           <div class="reviews-head p-4 bg-white box-shadow">
             <div class="text-warning">
@@ -361,7 +362,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-sm-6 pt-3">
+      <div class="col-lg-4 col-sm-6 pt-3" data-aos="fade-left" data-aos-delay="250">
         <div class="reviews">
           <div class="reviews-head p-4 bg-white box-shadow">
             <div class="text-warning">
@@ -382,7 +383,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-sm-6 pt-3">
+      <div class="col-lg-4 col-sm-6 pt-3" data-aos="fade-left" data-aos-delay="300">
         <div class="reviews">
           <div class="reviews-head p-4 bg-white box-shadow">
             <div class="text-warning">
@@ -403,7 +404,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-sm-6 pt-3">
+      <div class="col-lg-4 col-sm-6 pt-3" data-aos="fade-left" data-aos-delay="350">
         <div class="reviews">
           <div class="reviews-head p-4 bg-white box-shadow">
             <div class="text-warning">
@@ -436,12 +437,12 @@
     <div class="row">
       <div class="col-12">
         <div class="section-title text-center">
-          <h1 class="display-4 fw-semibold">The Team</h1>
+          <h1 class="display-4 fw-semibold" data-aos="fade-in">The Team</h1>
           <div class="line"></div>
         </div>
       </div>
       <div class="row g-4">
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="flip-up" data-aos-delay="150">
           <div class="teamMembers zoomed-image">
             <div class="image-zoom-warpper">
               <img src="./img/girl.jpg" alt="">
@@ -452,7 +453,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="flip-up" data-aos-delay="200">
           <div class="teamMembers zoomed-image">
             <div class="image-zoom-warpper">
               <img src="./img/man.jpg" alt="">
@@ -463,7 +464,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="flip-up" data-aos-delay="250">
           <div class="teamMembers zoomed-image">
             <div class="image-zoom-warpper">
               <img src="./img/unknown.jpg" alt="">
@@ -486,12 +487,12 @@
     <div class="row">
       <div class="col-12">
         <div class="section-title text-center">
-          <h1 class="text-white display-4 fw-semibold">Contact Us</h1>
+          <h1 class="text-white display-4 fw-semibold" data-aos="fade-in">Contact Us</h1>
           <div class="line"></div>
         </div>
       </div>
     </div>
-    <div class="row justify-content-center p-sm-4 pt-3 mt-5">
+    <div class="row justify-content-center p-sm-4 pt-3 mt-5" data-aos="zoom-out" data-aos-delay="100">
       <div class="col-lg-8">
         <form action="#" class="row g-4 p-lg-5 p-4 bg-white box-shadow">
           <div class="form-group col-lg-6">
@@ -530,13 +531,13 @@
     <div class="row">
       <div class="col-12">
         <div class="section-title text-center">
-          <h1 class="display-4 fw-semibold">Lastest News</h1>
+          <h1 class="display-4 fw-semibold" data-aos="fade-in">Lastest News</h1>
           <div class="line"></div>
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4 mt-5">
+      <div class="col-md-4 mt-5" data-aos="zoom-in" data-aos-delay="100">
         <div class="blog-content zoomed-image">
           <div class="image-zoom-warpper">
             <img src="./img/b1.jpg" alt="blog pics">
@@ -548,7 +549,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4 mt-5">
+      <div class="col-md-4 mt-5" data-aos="zoom-in" data-aos-delay="150">
         <div class="blog-content zoomed-image">
           <div class="image-zoom-warpper">
             <img src="./img/b2.jpg" alt="blog pics">
@@ -560,7 +561,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4 mt-5">
+      <div class="col-md-4 mt-5" data-aos="zoom-in" data-aos-delay="200">
         <div class="blog-content zoomed-image">
           <div class="image-zoom-warpper">
             <img src="./img/b3.jpg" alt="blog pics">
@@ -579,7 +580,7 @@
 
 <!-- FOOTER -->
 
-<div class="container ">
+<div class="container-fluid d-grid ">
   <footer class="text-center text-lg-start text-white footer" >
     <section class="d-flex justify-content-between p-4 footer-head">
       <div class="me-5">
@@ -653,10 +654,6 @@
 </div>
 
 
-
-
-
-
 <!-- Modals -->
 
 <div class="modal fade" id="signin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -719,28 +716,12 @@
 </div>
 
 
-<!-----typed text---->
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-<script>
-    var typed = new Typed('.tEffect', {
-    strings: [
-      'Furniture.',
-      'Equipment.',
-      'Lightings.',
-      'Interior Designs.'
-    ],
-    startDelay: 850,
-    typeSpeed: 300,
-    backSpeed: 150,
-    loop: true,
-    showCursor: true,
-  });
-</script>
-
-
 
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="./script/main.js"></script>
+
 </body>
 </html>

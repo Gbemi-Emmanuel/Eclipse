@@ -123,8 +123,8 @@ h1{
 }
 
 @media screen and (max-width: 770px) {
-    .LP-btns{
-        display: block;
+    .LP-service{
+        margin-top: 20px;
     }
 }
 
